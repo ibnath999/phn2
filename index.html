@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Phone Cluster</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body id="cc">
+    <header class="container py-5">
+      <h3 class="text-center mb-4 " id="pp">Phone Cluster</h3>
+      <div class="input-group mb-3 w-50 mx-auto" style="min-width: 250px; max-width: 500px;">
+
+        <!-- search field -->
+        <input id="search-field"type="text" class="form-control" placeholder="please search your mobile" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+
+        <!-- search button -->
+        <button onclick="loadData()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+      </div>
+    </header>
+
+
+    <!-- main content area -->
+    <main class="container mb-5">
+
+      <!-- alert mssg -->
+      <div id="no-result" class="w-75 alert alert-danger text-center fs-5 mx-auto border border-danger" role="alert" style="display: none; max-width: 400px;">No result found</div>
+
+        <!-- card container  -->
+        <div id="card-container" class="row g-3">  
+            <!-- card is created here according to search -->
+        </div>
+      </div>
+    </main>
+
+
+    <!-- details showing -->
+
+      <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div id="details-container" class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <!-- details showing here -->
+          </div>
+        </div>
+
+    
+    <!-- bootstrap bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--(script.js)-->
+    <script 
+      src="js/script.js">
+    </script>
+    <!---->
+    
+  </body>
+</html>
